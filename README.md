@@ -49,9 +49,11 @@ manually on the CLI::
 
 ### Example output
 
-./dns-qsources.sh  
-B1TD DNS Source: 3.11.119.74
-success,United Kingdom,GB,ENG,England,London,W1B,51.5074,-0.127758,Europe/London,Amazon Technologies Inc.,AWS EC2 (eu-west-2),"AS16509 Amazon.com, Inc.",3.11.119.74
-Google/Local DNS Source: 2a00:1450:400c:c02::105
-success,Belgium,BE,BRU,Brussels Capital,Brussels,,50.85045,4.34878,Europe/Brussels,Google LLC,Google Public DNS (bru),AS15169 Google LLC,2a00:1450:400c:c02::105
+Example output is show below::
+
+	./dns-qsources.sh  
+	B1TD DNS Source: 3.11.119.74
+	success,United Kingdom,GB,ENG,England,London,W1B,51.5074,-0.127758,Europe/London,Amazon Technologies Inc.,AWS EC2 (eu-west-2),"AS16509 Amazon.com, Inc.",3.11.119.74
+	Google/Local DNS Source: 2a00:1450:400c:c02::105
+	success,Belgium,BE,BRU,Brussels Capital,Brussels,,50.85045,4.34878,Europe/Brussels,Google LLC,Google Public DNS (bru),AS15169 Google LLC,2a00:1450:400c:c02::105
 
