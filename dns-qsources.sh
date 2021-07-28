@@ -3,7 +3,7 @@
 # Output apparent source IPs of queries
 # Author: Chris Marrison, John Neerdael
 # Last Modified: 20210727
-# v0.1.0
+# v0.1.1
 #######################################
 
 EXITCODE=0
@@ -18,7 +18,7 @@ QTYPE=${4:-txt}
 # Attempt to get source IP via DNS Server
 SIP=`dig @${B1TD} ${QUERY} ${QTYPE} +short | tr -d '"'`
 # Check exitcode
-if [ $? == 0 ]
+if [ $? -eq 0 ]
 then
 	# Output results and Geo data from ip-api.com
 	echo "B1TD DNS Source: $SIP"
@@ -26,7 +26,7 @@ then
 
 	LIP=`dig @${LOCAL} ${QUERY} ${QTYPE} +short | sed '/^"edns0/d' | tr -d '"'`
 	# Check exitcode
-	if [ $? == 0 ]
+	if [ $? -eq 0 ]
 	then
 		# Output results and Geo data from ip-api.com
 		echo "Google/Local DNS Source: $LIP"
